@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  color: #ebcb78;
+  font-family: "Acme", sans-serif;
+  /* background-image: url("../assets/casinocard_revert (portrait).jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; */
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card-img {
+  width: 80vw;
+  height: auto;
+}
+
+.top {
+  display: block;
+  position: absolute;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.bottom {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.left,
+.right {
+  display: none;
+}
+
+.card-tag::before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 2px;
+  background-color: #ebcb78;
+  transform: translate(-45px, 20px);
+}
+
+.card-tag::after {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 2px;
+  background-color: #ebcb78;
+  transform: translate(45px, -20px);
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 6rem;
+  margin: 20px 0px;
+  padding: 0 30px;
+}
+
+.card-span {
+  user-select: none;
+}
+
+.card-token {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.hotel3 {
+  background-color: #bfbb00;
+  box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.8);
+}
+.hotel5 {
+  background-color: #af3939;
+  box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.8);
+}
+.hotel7 {
+  background-color: #000000;
+  box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.8);
+}
+.hotel9 {
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.8);
+}
+.hotel10 {
+  background-color: #105f7e;
+  box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.8);
+}
+
+@media (orientation: landscape) {
+  .card-img {
+    height: 80vh;
+    width: auto;
+  }
+
+  .left {
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+
+  .right {
+    display: block;
+    position: absolute;
+    right: 0;
+    transform: rotateZ(180deg);
+  }
+
+  .top,
+  .bottom {
+    display: none;
+  }
+
+  .card-text {
+    padding: 0 20vw;
+    margin: 20px 60px;
+  }
+}
