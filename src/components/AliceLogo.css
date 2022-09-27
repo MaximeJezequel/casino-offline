@@ -37,12 +37,19 @@
 
 .alice-logo-logout {
   position: absolute;
-  right: 50px;
+  right: 30px;
   bottom: 30px;
-  color: #ebcb78;
-  font-size: 1.5rem;
-  font-weight: normal;
   cursor: pointer;
+}
+
+.alice-logo-logout svg {
+  color: #edcb70;
+}
+
+.alice-logo-logout svg:hover {
+  color: black;
+  background-color: #edcb70;
+  border-radius: 3px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

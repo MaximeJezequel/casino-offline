@@ -28,7 +28,7 @@ const ForgotPassword = () => {
       <div className="connexion">
         <h1>Mot de passe oublié</h1>
         <form onSubmit={handleSubmit}>
-          <div>
+          <div className="connexion-email">
             <label htmlFor="email">Email</label>
             <input
               id="email"

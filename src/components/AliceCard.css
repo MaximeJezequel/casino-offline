@@ -7,7 +7,7 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  color: #ebcb78;
+  color: #edcb70;
   font-family: "Acme", sans-serif;
   /* background-image: url("../assets/casinocard_revert (portrait).jpg");
   background-size: 100% 100%;
@@ -47,7 +47,7 @@
   margin: auto;
   width: 30px;
   height: 2px;
-  background-color: #ebcb78;
+  background-color: #edcb70;
   transform: translate(-45px, 20px);
 }
 
@@ -57,7 +57,7 @@
   margin: auto;
   width: 30px;
   height: 2px;
-  background-color: #ebcb78;
+  background-color: #edcb70;
   transform: translate(45px, -20px);
 }
 
@@ -83,7 +83,7 @@
 }
 
 .hotel3 {
-  background-color: #bfbb00;
+  background-color: #acbf00;
   box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.8);
 }
 .hotel5 {

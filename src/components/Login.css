@@ -1,0 +1,78 @@
+.connexion form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.connexion button {
+  background-color: black;
+  color: #edcb70;
+  border: 2px solid #edcb70;
+  border-radius: 20px;
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.connexion button:hover,
+.connexion button:focus {
+  color: black;
+  background-color: #edcb70;
+  background: rgb(237, 203, 112);
+  background: radial-gradient(
+    circle,
+    rgba(237, 203, 112, 1) 59%,
+    rgba(169, 110, 48, 1) 100%
+  );
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.connexion-email,
+.connexion-password {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.connexion-email input,
+.connexion-password input {
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
+  padding-left: 80px;
+  background-color: black;
+  color: #edcb70;
+  outline: none;
+  border: none;
+  opacity: 0.8;
+  border-bottom: 1px solid #edcb70;
+  margin-bottom: -1px;
+  fill: none !important;
+}
+
+.connexion-email input:focus,
+.connexion-password input:focus {
+  border-bottom: 2px solid #edcb70;
+  opacity: 1;
+}
+
+.connexion-email label,
+.connexion-password label {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  font-size: 16px;
+  color: #edcb70;
+  z-index: 2;
+}
+
+@media (orientation: landscape) {
+  .connexion form {
+    width: 40vw;
+  }
+}

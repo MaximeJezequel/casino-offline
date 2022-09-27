@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { UserAuth } from "../context/AuthContext"
 
+import "./Login.css"
+
 const Login = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -29,7 +31,7 @@ const Login = () => {
       <div className="connexion">
         <h1>Connexion au Casino</h1>
         <form onSubmit={handleSubmit}>
-          <div>
+          <div className="connexion-email">
             <label htmlFor="email">Email</label>
             <input
               id="email"
@@ -37,7 +39,7 @@ const Login = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <div>
+          <div className="connexion-password">
             <label htmlFor="password">Password</label>
             <input
               id="password"
@@ -45,7 +47,7 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <button>Sign In</button>
+          <button>Login</button>
           <p>
             Mot de passe oublié ?{" "}
             <Link
