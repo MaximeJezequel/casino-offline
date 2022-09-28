@@ -39,7 +39,9 @@
 }
 
 .connexion-email input,
-.connexion-password input {
+.connexion-password input,
+.connexion-email input:-webkit-autofill,
+.connexion-password input:-webkit-autofill{
   width: 100%;
   margin: 10px;
   padding: 5px;
