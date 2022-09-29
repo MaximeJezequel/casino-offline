@@ -5,9 +5,10 @@ const cards = [
     line3: "Prêt à défier le hasard ?",
   },
   {
-    line1: "Avant de commencer, échangez ",
-    line2: "chaque pièce avec un billet",
-    line3: "en suivant une flèche.",
+    line1: "Avant de commencer,",
+    line2: "échangez chaque pièce",
+    line3: "avec un billet",
+    line4: "en suivant une flèche.",
   },
   {
     line1: "Echangez",

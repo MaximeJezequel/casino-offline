@@ -1,34 +1,42 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #edcb70;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .connexion form {
+  width: min(90vw, 80vh);
+  padding: 1rem;
+}
+
+.connexion-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  padding: 2vh 0;
+}
+
+.connexion-middle {
+  padding: 2vh 0;
+}
+
+.connexion-bottom {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 80vw;
-}
-
-.connexion button {
-  background-color: black;
-  color: #edcb70;
-  border: 2px solid #edcb70;
-  border-radius: 20px;
-  margin-top: 30px;
-  padding: 10px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.connexion button:hover,
-.connexion button:focus {
-  color: black;
-  background-color: #edcb70;
-  background: rgb(237, 203, 112);
-  background: radial-gradient(
-    circle,
-    rgba(237, 203, 112, 1) 59%,
-    rgba(169, 110, 48, 1) 100%
-  );
-  outline: none;
-  border: 2px solid transparent;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  padding: 2vh 0;
 }
 
 .connexion-email,
@@ -36,24 +44,25 @@
   display: flex;
   justify-content: center;
   position: relative;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .connexion-email input,
 .connexion-password input,
 .connexion-email input:-webkit-autofill,
-.connexion-password input:-webkit-autofill{
+.connexion-password input:-webkit-autofill {
   width: 100%;
-  margin: 10px;
-  padding: 5px;
-  font-size: 16px;
-  padding-left: 80px;
-  background-color: black !important;
-  color: #edcb70 !important;
-  outline: none;
+  margin: 1px 0 -1px 0;
+  font-size: 1rem;
+  padding: 0.5rem 0rem 0.5rem 2.5rem;
+  height: 1.2em;
+  background-color: transparent;
+  color: #edcb70;
   border: none;
-  opacity: 0.8;
   border-bottom: 1px solid #edcb70;
-  margin-bottom: -1px;
+  outline: none;
+  opacity: 0.8;
   fill: none !important;
 }
 
@@ -66,15 +75,86 @@
 .connexion-email label,
 .connexion-password label {
   position: absolute;
-  left: 10px;
-  top: 14px;
-  font-size: 16px;
+  left: 0.5rem;
+  top: 0.75rem;
   color: #edcb70;
   z-index: 2;
 }
 
+.connexion button {
+  width: 50%;
+  padding: 0.5rem;
+  margin-top: 12vh;
+  font-size: 1rem;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: bold;
+  color: black;
+  background-color: #edcb70;
+  background: #edcb70;
+  background: radial-gradient(
+    circle,
+    rgba(237, 203, 112, 1) 59%,
+    rgba(169, 110, 48, 1) 100%
+  );
+  cursor: pointer;
+}
+
+.connexion button:hover,
+.connexion button:focus {
+  border: 2px solid #edcb70;
+  background: radial-gradient(
+    circle,
+    rgba(237, 203, 112, 1) 31%,
+    rgba(169, 110, 48, 1) 100%
+  );
+}
+
+.connexion-wrapper {
+  display: "flex";
+  flex-wrap: "wrap";
+  justify-content: "center";
+  align-items: "center";
+  gap: "0.25rem";
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.connexion-wrapper p {
+  margin: 1rem 0 0.5rem 0;
+}
+
+.connexion-wrapper a {
+  color: white;
+  cursor: pointer;
+}
+
 @media (orientation: landscape) {
-  .connexion form {
-    width: 40vw;
+  .connexion-middle {
+    padding: 6vh 0 4vh 0;
+  }
+
+  .connexion button {
+    margin: 4.2rem 0 0 0;
+  }
+
+  .connexion-wrapper {
+    margin-top: 0px;
+  }
+
+  .connexion-top {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .connexion-email,
+  .connexion-password {
+    max-width: 600px;
   }
 }

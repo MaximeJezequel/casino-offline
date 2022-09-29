@@ -2,6 +2,9 @@ import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { UserAuth } from "../context/AuthContext"
 
+import { faUser } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 const ForgotPassword = () => {
   const [email, setEmail] = useState("")
 
@@ -14,6 +17,9 @@ const ForgotPassword = () => {
       navigate("/login")
     } catch (error) {
       console.log(error.message)
+      alert(
+        "Oups, il y a eu un problème ! Veuillez vérifier l'adresse email saisie."
+      )
     }
   }
 
@@ -26,28 +32,30 @@ const ForgotPassword = () => {
   return (
     <main>
       <div className="connexion">
-        <h1>Mot de passe oublié</h1>
         <form onSubmit={handleSubmit}>
-          <div className="connexion-email">
-            <label htmlFor="email">Email</label>
-            <input
-              id="email"
-              type="email"
-              onChange={(e) => setEmail(e.target.value)}
-            />
+          <div className="connexion-top">
+            <h1>Mot de passe oublié</h1>
           </div>
-          <button>Envoyer</button>
-          <p>
-            J'ai retrouvé la mémoire...{" "}
-            <Link
-              style={{
-                color: "white",
-              }}
-              to="/login"
-            >
-              Log in
-            </Link>
-          </p>
+          <div className="connexion-middle">
+            <div className="connexion-email">
+              <label htmlFor="email">
+                <FontAwesomeIcon icon={faUser} />
+              </label>
+              <input
+                id="email"
+                type="email"
+                placeholder="email"
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+          </div>
+          <div className="connexion-bottom">
+            <button>Envoyer</button>
+            <div className="connexion-wrapper">
+              <p>J'ai retrouvé la mémoire... </p>
+              <Link to="/login">Log in</Link>
+            </div>
+          </div>
         </form>
       </div>
     </main>

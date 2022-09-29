@@ -17,6 +17,7 @@ const AliceCard = ({ item, newIndex }) => {
         <span className="card-span">{item.line1}</span>
         <span className="card-span">{item.line2}</span>
         <span className="card-span">{item.line3}</span>
+        <span className="card-span">{item.line4}</span>
       </h2>
       {newIndex > 0 && <div className={`card-token hotel${newIndex}`}></div>}
     </div>
