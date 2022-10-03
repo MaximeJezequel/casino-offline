@@ -62,8 +62,8 @@ const cards = [
   },
   {
     line1: "... et donnez-le moi.",
-    line2: "",
-    line3: "",
+    line2: " ",
+    line3: " ",
   },
   {
     line1: "Vous pouvez garder",

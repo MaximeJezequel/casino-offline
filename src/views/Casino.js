@@ -1,4 +1,4 @@
-import Alice from "./Alice"
+import Alice from "../components/Alice"
 
 const Casino = () => {
   return (

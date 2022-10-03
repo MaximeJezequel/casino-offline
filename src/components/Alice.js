@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 import AliceCarousel from "react-alice-carousel"
 import AliceItem from "./AliceItem"
 
-import cards from "../data/cards"
+import cards from "../data/cardsFR"
 
 import "./Alice.css"
 
@@ -35,7 +35,7 @@ const Alice = () => {
       )
     }
     mapping(items)
-  }, [items])
+  })
 
   return (
     <AliceCarousel

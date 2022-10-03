@@ -6,11 +6,11 @@ import {
 } from "react-router-dom"
 import { AuthContextProvider } from "./context/AuthContext"
 
-import Casino from "./components/Casino"
-import ForgotPassword from "./components/ForgotPassword"
-import Home from "./components/Home"
-import Login from "./components/Login"
 import ProtectedRoute from "./routes/ProtectedRoute"
+import Casino from "./views/Casino"
+import ForgotPassword from "./views/ForgotPassword"
+import Home from "./views/Home"
+import Login from "./views/Login"
 
 import "./App.css"
 
