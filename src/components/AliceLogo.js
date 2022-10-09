@@ -16,8 +16,12 @@ const AliceLogo = ({ index, logo, item, handleOnClick, setItems }) => {
   }
 
   const handleSelectChange = (e) => {
-    setItems(cards[e.target.value])
-    console.log(`Language changed to ${e.target.value}`)
+    try {
+      setItems(cards[e.target.value])
+      // console.log(`Language changed to ${e.target.value}`)
+    } catch (error) {
+      console.log(error.message)
+    }
   }
 
   const handleLogOut = async () => {
