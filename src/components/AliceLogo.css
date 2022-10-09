@@ -11,10 +11,24 @@
   font-family: "Acme", sans-serif;
 }
 
+.alice-logo select {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
 .alice-logo-img {
   position: absolute;
   height: 40vh;
   user-select: none;
+  -webkit-user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
 }
 
 .alice-logo-background {

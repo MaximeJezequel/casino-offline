@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react"
 import AliceCarousel from "react-alice-carousel"
 import AliceItem from "./AliceItem"
 
-import cards from "../data/cardsFR"
+import cards from "../data/cards"
 
 import "./Alice.css"
 
 const Alice = () => {
-  const [items, setItems] = useState(cards)
+  const [items, setItems] = useState(cards.FR)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [cardItems, setCardItems] = useState([])
 
@@ -29,6 +29,7 @@ const Alice = () => {
             index={index}
             item={item}
             items={items}
+            setItems={setItems}
             handleOnClick={handleOnClick}
           />
         ))
