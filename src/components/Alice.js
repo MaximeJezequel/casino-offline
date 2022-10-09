@@ -36,7 +36,7 @@ const Alice = () => {
       )
     }
     mapping(items)
-  })
+  }, [items])
 
   return (
     <AliceCarousel
