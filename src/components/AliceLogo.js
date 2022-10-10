@@ -37,8 +37,10 @@ const AliceLogo = ({ index, logo, item, handleOnClick, setItems }) => {
   return (
     <div className="alice-logo" key={index}>
       <select onChange={(e) => handleSelectChange(e)}>
-        <option value="FR">FR</option>
-        <option value="EN">EN</option>
+        <option value="FR_EUR">FR €</option>
+        <option value="EN_EUR">EN €</option>
+        <option value="EN_GBP">EN £</option>
+        <option value="EN_USD">EN $</option>
       </select>
       <img
         src={logo}

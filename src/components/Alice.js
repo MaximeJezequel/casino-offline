@@ -8,7 +8,7 @@ import cards from "../data/cards"
 import "./Alice.css"
 
 const Alice = () => {
-  const [items, setItems] = useState(cards.FR)
+  const [items, setItems] = useState(cards.FR_EUR)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [cardItems, setCardItems] = useState([])
 

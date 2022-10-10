@@ -22,6 +22,10 @@
   cursor: pointer;
 }
 
+.alice-logo select:focus {
+  outline: none;
+}
+
 .alice-logo-img {
   position: absolute;
   height: 40vh;
