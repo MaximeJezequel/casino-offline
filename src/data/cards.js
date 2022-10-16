@@ -1,7 +1,7 @@
 const coins_EUR = ["50cts", "1€", "2€", "10€"]
-const coins_EUR2 = ["50ct", "1€", "2€", "10€"]
-const coins_GBP = ["50p", "1£", "2£", "10£"]
-const coins_USD = ["25ct", "50ct", "1$", "10$"]
+const coins_EUR2 = ["50ct", "€1", "€2", "€10"]
+const coins_GBP = ["50p", "£1", "£2", "£10"]
+const coins_USD = ["nickel", "dime", "quarter", "$10"]
 
 const cards = {
   FR_EUR: [
@@ -236,13 +236,13 @@ const cards = {
       line4: "following an arrow.",
     },
     {
-      line1: `Switch the ${coins_USD[2]} coin`,
+      line1: `Switch the ${coins_USD[2]}`,
       line2: `with the ${coins_USD[3]} bill.`,
       line3: " ",
     },
     {
-      line1: `Switch the ${coins_USD[0]} coin`,
-      line2: `with the ${coins_USD[1]} coin.`,
+      line1: `Switch the ${coins_USD[0]}`,
+      line2: `with the ${coins_USD[1]}.`,
       line3: " ",
     },
     {
@@ -251,7 +251,7 @@ const cards = {
       line3: " ",
     },
     {
-      line1: `Switch the ${coins_USD[0]} coin`,
+      line1: `Switch the ${coins_USD[0]}`,
       line2: "following an arrow.",
       line3: " ",
     },
@@ -261,7 +261,7 @@ const cards = {
       line3: " ",
     },
     {
-      line1: `Switch the ${coins_USD[0]} coin`,
+      line1: `Switch the ${coins_USD[0]}`,
       line2: "following an arrow.",
       line3: " ",
     },
@@ -271,7 +271,7 @@ const cards = {
       line3: " ",
     },
     {
-      line1: `Switch the ${coins_USD[0]} coin`,
+      line1: `Switch the ${coins_USD[0]}`,
       line2: "following an arrow.",
       line3: " ",
     },
