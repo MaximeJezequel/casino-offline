@@ -163,13 +163,13 @@ const cards = {
       line4: "following an arrow.",
     },
     {
-      line1: `Switch the ${coins_GBP[2]} coin`,
-      line2: `with the ${coins_GBP[3]} bill.`,
+      line1: `Switch the ${coins_GBP[2]}`,
+      line2: `with the ${coins_GBP[3]}.`,
       line3: " ",
     },
     {
-      line1: `Switch the ${coins_GBP[0]} coin`,
-      line2: `with the ${coins_GBP[1]} coin.`,
+      line1: `Switch the ${coins_GBP[0]}`,
+      line2: `with the ${coins_GBP[1]}.`,
       line3: " ",
     },
     {
@@ -178,7 +178,7 @@ const cards = {
       line3: " ",
     },
     {
-      line1: `Switch the ${coins_GBP[0]} coin`,
+      line1: `Switch the ${coins_GBP[0]}`,
       line2: "following an arrow.",
       line3: " ",
     },
@@ -188,7 +188,7 @@ const cards = {
       line3: " ",
     },
     {
-      line1: `Switch the ${coins_GBP[0]} coin`,
+      line1: `Switch the ${coins_GBP[0]}`,
       line2: "following an arrow.",
       line3: " ",
     },
@@ -198,7 +198,7 @@ const cards = {
       line3: " ",
     },
     {
-      line1: `Switch the ${coins_GBP[0]} coin`,
+      line1: `Switch the ${coins_GBP[0]}`,
       line2: "following an arrow.",
       line3: " ",
     },
