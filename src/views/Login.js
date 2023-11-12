@@ -32,40 +32,40 @@ const Login = () => {
 
   return (
     <main>
-      <div className="connexion">
+      <div className='connexion'>
         <form onSubmit={handleSubmit}>
-          <div className="connexion-top">
+          <div className='connexion-top'>
             <h1>Connexion au Casino</h1>
           </div>
-          <div className="connexion-middle">
-            <div className="connexion-email">
-              <label htmlFor="email">
+          <div className='connexion-middle'>
+            <div className='connexion-email'>
+              <label htmlFor='email'>
                 <FontAwesomeIcon icon={faUser} />
               </label>
               <input
-                id="email"
-                type="email"
-                placeholder="email"
+                id='email'
+                type='email'
+                placeholder='email'
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div className="connexion-password">
-              <label htmlFor="password">
+            <div className='connexion-password'>
+              <label htmlFor='password'>
                 <FontAwesomeIcon icon={faUnlockKeyhole} />
               </label>
               <input
-                id="password"
-                type="password"
-                placeholder="password"
+                id='password'
+                type='password'
+                placeholder='password'
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
           </div>
-          <div className="connexion-bottom">
+          <div className='connexion-bottom'>
             <button>Entrer</button>
-            <div className="connexion-wrapper">
+            <div className='connexion-wrapper'>
               <p>Mot de passe oublié ? </p>
-              <Link to="/reset-password">Reset password</Link>
+              <Link to='/reset-password'>Reset password</Link>
             </div>
           </div>
         </form>

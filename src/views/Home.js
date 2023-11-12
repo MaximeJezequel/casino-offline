@@ -20,11 +20,11 @@ const Home = () => {
   return (
     <div>
       <h1>Home</h1>
-      <img src={wzrd} alt="wizard" style={{ width: "30%" }} />
+      <img src={wzrd} alt='wizard' style={{ width: "30%" }} />
       <p>User Name: {user && user.displayName}</p>
       <p>User Email: {user && user.email}</p>
       <button onClick={() => handleLogOut()}>Log out</button>
-      <Link to="/">Casino</Link>
+      <Link to='/'>Casino</Link>
     </div>
   )
 }

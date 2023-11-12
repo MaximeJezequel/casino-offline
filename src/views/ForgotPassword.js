@@ -31,29 +31,29 @@ const ForgotPassword = () => {
 
   return (
     <main>
-      <div className="connexion">
+      <div className='connexion'>
         <form onSubmit={handleSubmit}>
-          <div className="connexion-top">
+          <div className='connexion-top'>
             <h1>Mot de passe oublié</h1>
           </div>
-          <div className="connexion-middle">
-            <div className="connexion-email">
-              <label htmlFor="email">
+          <div className='connexion-middle'>
+            <div className='connexion-email'>
+              <label htmlFor='email'>
                 <FontAwesomeIcon icon={faUser} />
               </label>
               <input
-                id="email"
-                type="email"
-                placeholder="email"
+                id='email'
+                type='email'
+                placeholder='email'
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
           </div>
-          <div className="connexion-bottom">
+          <div className='connexion-bottom'>
             <button>Envoyer</button>
-            <div className="connexion-wrapper">
+            <div className='connexion-wrapper'>
               <p>J'ai retrouvé la mémoire... </p>
-              <Link to="/login">Log in</Link>
+              <Link to='/login'>Log in</Link>
             </div>
           </div>
         </form>

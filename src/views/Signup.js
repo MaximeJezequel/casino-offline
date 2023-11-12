@@ -26,22 +26,22 @@ const Signup = () => {
     <div>
       <h1>Sign up for free</h1>
       <p>
-        Already have an account yet ? <Link to="/login">Log in.</Link>
+        Already have an account yet ? <Link to='/login'>Log in.</Link>
       </p>
       <form onSubmit={handleSubmit}>
         <div>
-          <label for="email">Email Address</label>
+          <label for='email'>Email Address</label>
           <input
-            id="email"
-            type="email"
+            id='email'
+            type='email'
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div>
-          <label for="password">Password</label>
+          <label for='password'>Password</label>
           <input
-            id="password"
-            type="password"
+            id='password'
+            type='password'
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
